@@ -3,18 +3,18 @@ from nsepython import *
 
 # Create your views here.
 def stockPicker(request):
-    stock_picker = tickers_nifty50()
-    print(stock_picker)
-
+    stockPicker = fnolist()
+    
+    
     #Context The Data
-    context = {'stockpicker':stock_picker}
+    context = {'stockpicker':stockPicker}
     return render(request,'mainapp/stockpicker.html',context)
 
 def stockTracker(request):
-    n = NSELive()
-    details = n.stock_quote("HDFC")
+    # n = NSELive()
+    # details = n.stock_quote("HDFC")
     
-    print(details)
+    # print(details)
 
     # Context The Data
     
