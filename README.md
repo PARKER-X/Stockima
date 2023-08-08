@@ -1,0 +1,1 @@
+# Stockima- Manage your stocks
